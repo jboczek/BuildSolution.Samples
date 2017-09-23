@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace BuildSolution.DesignPatterns.Structural.Decorator
+﻿namespace BuildSolution.DesignPatterns.Structural.Decorator
 {
 	public class Window : IWindow
 	{
-		public void Draw()
+		public string Draw()
 		{
-			Console.WriteLine("Draw window");
+			return "Window";
 		}
 	}
 }

@@ -9,13 +9,13 @@ namespace BuildSolution.DesignPatterns
 		{
 			IWindow windowWithScroll = new HorizontalScrollWindow(new Window());
 
-			windowWithScroll.Draw();
+			Console.WriteLine(windowWithScroll.Draw());
 
 			Console.WriteLine("------------------");
 
 			IWindow windowWithBorderAndScroll = new WindowLogger(windowWithScroll);
 
-			windowWithBorderAndScroll.Draw();
+			Console.WriteLine(windowWithBorderAndScroll.Draw());
 
 			Console.ReadLine();
 		}

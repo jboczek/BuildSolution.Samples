@@ -13,10 +13,11 @@ namespace BuildSolution.DesignPatterns.Structural.Decorator
 		{
 			_window = window;
 		}
-		public void Draw()
+		public string Draw()
 		{
 			ConsoleLogBeforeDraw();
-			_window.Draw();
+
+			return _window.Draw();
 		}
 
 		private void ConsoleLogBeforeDraw()

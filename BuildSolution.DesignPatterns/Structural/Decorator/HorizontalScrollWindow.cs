@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BuildSolution.DesignPatterns.Structural.Decorator
+﻿namespace BuildSolution.DesignPatterns.Structural.Decorator
 {
 	/// <summary>
 	/// Decorator class that horizontal scroll to IWindow object
@@ -14,15 +12,15 @@ namespace BuildSolution.DesignPatterns.Structural.Decorator
 			_window = window;
 		}
 
-		public void Draw()
+		public string Draw()
 		{
-			_window.Draw();
-			DrawHorizontalScroll();
+			var window = _window.Draw();
+			return AddHorizontalScroll(window);
 		}
 
-		private void DrawHorizontalScroll()
+		private string AddHorizontalScroll(string window)
 		{
-			Console.WriteLine("Draw horizontal scroll");
+			return window + " with horizontalscroll";
 		}
 	}
 }

@@ -2,6 +2,8 @@
 {
     public interface IDrawable
     {
-	    void Draw();
+	    string Draw();
     }
+
 }
+ 
